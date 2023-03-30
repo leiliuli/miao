@@ -1,0 +1,97 @@
+<!DOCTYPE html  style=height: "100%";>
+<html lang="en">
+<head>
+<!-- 想要增加html的行高行宽 直接在最外层的html后面增加,在外面使用的style的格式 要遵循html的格式-->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head></body>
+<style>
+  /*千万要记得 增加 高和宽 100% 还有margin=0 消除 外面的白框 用font-size去消除空格*/
+  body{
+      height: 100%;
+      width: 100%; 
+    margin: 0;
+    font-size: 0;
+    }
+    /*顶格浏览栏 可以通过qq截图去看rgb颜色 然后设置行高就可以了*/
+  .a {
+    background-color: rgb(95, 158, 160);
+    height: 100px;
+    font-size: 16px;
+  }
+  /*侧边栏  因为最上面消除了fontsize的同时消除了 字体 所以在你想要的字体显示 设置字体
+  通过overflow-X(Y):scroll 来设置 横向或者纵向滚动轴
+  通过display:inline-block 来更改行内块元素 */
+   .b {
+    font-size: 16px;
+    overflow-y: scroll;
+    background-color: rgb(160, 82, 45);
+    width: 100px;
+    height: calc(100% - 100px);
+    display: inline-block;
+  }
+  /*要注意 行元素和块元素的不同,vertical-align:top 是顶格书写 把块元素 放到最上面
+  一定要多用自己的猪脑 */
+  main {
+    font-size: 16px;
+    background-color: rgb(0, 128, 128);
+    width: calc(100% - 100px);
+    height: calc(100% - 100px);
+    display: inline-block;
+    vertical-align: top;
+  }
+</style>
+
+<body>
+  <div class="a ">庆祝一下 今天 是第一次使用人脑+猪脑合成完成作业 泪琉璃
+  </div>
+  <div class="b">
+    <ul>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+  </div>
+  <main>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, eum ratione optio, id officia ullam vitae eaque vero, doloribus repellendus illo. Ipsum voluptatem eligendi rem tempora ab a odit ad.
+    Quam cumque asperiores aspernatur iusto aliquam recusandae dolorem pariatur, modi sed minima, nobis ea dolores eos perferendis doloribus itaque. Accusamus officiis assumenda commodi aut, earum fuga in. Laudantium, sequi libero!
+    Saepe debitis illo vel, exercitationem animi commodi in facere veniam cupiditate qui vero ipsam ex dolorum molestiae ut dolores deleniti earum eius. Maxime nam molestias ipsam, rem ratione eligendi provident?
+    Magni eveniet qui rerum r illo! Eos odio, nemo rem natus aperiam a pariatur aut. Fugit qui, officiis provident sapiente eveniet, laborum quae voluptatum quia nulla voluptatem alias.
+    Nulla similique dolore sapiente officia dolorum perferendis? Aut consequatur quis consectetur facere iste fuga delectus doloribus fugiat laudantium fugit voluptates inventore autem ipsam, ad placeat saepe natus porro similique eius.
+    Atque odit vitae ex eius eveniet accusamus aspernatur facilis, soluta quidem neque officia! Magni deserunt, ex harum temporibus numquam asperiores deleniti tempore obcaecati perferendis assumenda, repellat ducimus! Aut, fugiat! Reiciendis?
+
+  </main>
+  
+</body>
+</html>
