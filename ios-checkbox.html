@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      margin: 0px;
+    }
+    
+   main {
+    background-color: rgb(233, 239, 233);
+    width: 270px;
+    height: 160px;
+    transition: 5s;
+    position:absolute;
+    text-shadow: 3px;
+   }
+
+   .ball {
+    background-color:white;
+    border-radius: 50%;
+    position:absolute;
+    width: 155px;
+    height: 155px;
+    top:0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    transition: 3s;
+    text-shadow: 3px;
+   }
+
+   .ball:hover{
+    position: relative;
+    margin-left: 100px;
+   }
+
+   main:hover .ball{
+    background-color: green;
+    margin-left: 100px;
+   }
+
+  </style>
+</head>
+<body>
+ <main>
+   <div class="ball"></div>
+ </main>
+</body>
+</html>
