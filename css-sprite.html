@@ -5,10 +5,25 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title><style>
+    /*万年不变的注解环节来了,首先 这次作业比较关键的一个点就是
+    要知道div class 里面的类名选择问题 可以给一群需要编辑的代码
+    群体命名 随后给他们一个小名 这样 就不用写重复的代码了*/
+
+
+    /*首先 现在选择器里面 去输出backround-image:url 先把图片 给所有的选择器放进去
+    然后 变成 行内块元素  */
   .lll {
     background-image:url( https://attach.cgjoy.com/attachment/forum/201807/09/115619djjnhx385l0x5lxu.jpg);
     display: inline-block;
   }
+  /*随后 使用类选择器 选择小名  首先 要给他们设置宽和高  
+  多次因为忘记设置宽高导致前面写的 都忘了有效还是无效
+  以后先设置宽高
+  和之前的margin:0  / box-sizing: border-box一样
+  千万不能忘记设置
+  设置了宽高之后 使用background-position 确定背景图片位置
+  后续的两个数值是一个向右一个向下
+  但是也可以通过在前面增加 四方位元素 来更改*/
   .q1 {
     width: 185px;
     height: 160px;
