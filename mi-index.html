@@ -43,13 +43,13 @@
   .top2 > a > img{
     width: 60px;
     height: 67px;
-    position:fixed;
+    position:absolute;
     left: 180px;
     top: 80px;
     display: inline-block;
   }
   .top3 > input {
-       position: fixed;
+       position: absolute;
        right: 200px;
        top: 100px;
        height: 35px;
@@ -59,7 +59,7 @@
   .top3 > img{
       width: 40px;
       height: 40px;
-      position: fixed;
+      position: absolute;
       right: 160px;
       top: 100px;
   }
@@ -78,13 +78,36 @@
 
   .top401:hover > a > span {
   display: block;
-  width: 60px;
-  height: 80px;
-  height: 290px;
+  height: 280px;
   width: 100%;
-  position: fixed;
-  left: 0;
+  right: 0px;
   border: 1px black solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
+  }
+  
+  .borderr1{
+    border-right: 1px solid black;
+  }
+  .borderr2{
+    border-right: 1px solid black;
+  }
+  .borderr3{
+    border-right: 1px solid black;
+  }
+  .borderr4{
+    border-right: 1px solid black;
+  }
+  .borderr5{
+    border-right: 1px solid black;
+  }
+  
+  .wp{
+    background-color: green;
+    width: 192px;
+    height: 600px;
   }
   </style>
 </head>
@@ -131,8 +154,12 @@
     <ul>
       <li class="top401"><a href="javascript: void(0);">xiaomi手机
         <span>
-          <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/c758eb7e0dce4307c62c47155519bc80.png?thumb=1&w=200&h=138&f=webp&q=90" alt="">
-          <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/11e28a0a7c6a2ca07f0dc2044d3858c2.png?thumb=1&w=200&h=138&f=webp&q=90" alt="">
+          <div class="borderr1"><img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/c758eb7e0dce4307c62c47155519bc80.png?thumb=1&w=200&h=138&f=webp&q=90" alt=""></div>
+          <div class="borderr2"><img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/11e28a0a7c6a2ca07f0dc2044d3858c2.png?thumb=1&w=200&h=138&f=webp&q=90" alt=""></div>
+          <div class="borderr3"><img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/581f3a690e6803add02e4c9fde98cb78.png?thumb=1&w=200&h=138&f=webp&q=90" alt=""></div>
+          <div class="borderr4"><img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/4ef3713521fb9d7f114aa8bb152e220d.png?thumb=1&w=200&h=138&f=webp&q=90" alt=""></div>
+          <div class="borderr5"><img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/fea69fb5990da9dfc909aa8279aaea7e.png?thumb=1&w=200&h=138&f=webp&q=90" alt=""></div>
+          <div><img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/9c06f92c3216c90a566916e719935018.png?thumb=1&w=200&h=138&f=webp&q=90" alt=""></div>
         </span>
       </a>
     </li>
@@ -144,6 +171,21 @@
       <li class="top407"><a href="javascript: void(0);">路由器</a>     <span><img src="" alt=""></span></li>
       <li class="top408"><a href="javascript: void(0);">服务中心</a>   <span><img src="" alt=""></span></li>
       <li class="top409"><a href="javascript: void(0);">社区</a>       <span><img src="" alt=""></span></li>
+    </ul>
+    <!--首先第一件事就是A标签不能随便用,上面图片如果用a标签会直接跳出来,以后出了那些必须用a标签的 不然一律用div标签-->
+  </div>
+  <div>
+    <ul class="wp">
+      <li>手机</li>
+      <li>电视</li>
+      <li>家电</li>
+      <li>笔记本平板</li>
+      <li>出行 穿戴</li>
+      <li>耳机 音箱</li>
+      <li>健康 儿童</li>
+      <li>生活 箱包</li>
+      <li>智能 路由器</li>
+      <li>电源 配件</li>
     </ul>
   </div>
 </body>
