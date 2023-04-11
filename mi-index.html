@@ -22,13 +22,13 @@
       text-align: center;
     }
 
-    li {
+     .top1 > ul >li {
       width: 80px;
       list-style: none;
       display: block;
       float: left;
       display: flex;
- }
+  }
     
   .tp:hover > a > span {
   display: block;
@@ -48,6 +48,7 @@
     top: 80px;
     display: inline-block;
   }
+ 
   .top3 > input {
        position: absolute;
        right: 200px;
@@ -87,7 +88,13 @@
   align-items: center;
   overflow: auto;
   }
-  
+  .top4 > ul >li {
+      width: 80px;
+      list-style: none;
+      display: block;
+      float: left;
+      display: flex;
+  }
   .borderr1{
     border-right: 1px solid black;
   }
@@ -107,7 +114,19 @@
   .wp{
     background-color: green;
     width: 192px;
-    height: 600px;
+    height: 450px;
+    list-style: none;
+    position: absolute;
+    left: 180px;
+  }
+  .wp > li {
+    margin-bottom: 20px;
+  }
+  .wp1:hover > ul > li {
+  display: block;
+  }
+  .wp1 > ul > li {
+    display: none;
   }
   </style>
 </head>
@@ -134,12 +153,12 @@
       </li>
       <li><a href="javascript:;">Select Location</a> </li>
     </ul>
-    <ol>
+    <ul>
       <li><a href="javascript:void(0);">登陆</a> </li>
       <li><a href="javascript:void(0);">注册</a> </li>
       <li><a href="javascript:void(0);">消息通知</a> </li>
       <li><a href="https://www.mi.com/shop/buy/cart">购物车</a> </li>
-    </ol>
+    </ul>
   </div>
   <div class="top2"><!--这里是小米左边的图标 但是因为 没有地址 只能用逆光代替-->
     <a href="https://www.mi.com/">
@@ -176,7 +195,18 @@
   </div>
   <div>
     <ul class="wp">
-      <li>手机</li>
+      <li class="wp1">
+        手机
+        <ul>
+        <li>xiaomi mix</li>
+        <li>xiaomi 数字</li>
+        <li>xiaomi 青春</li>
+        <li>redmi mix</li>
+        <li>redmi 数字</li>
+        <li>redmi 青春</li>
+        <li>redmi X</li>  
+        </ul>
+      </li>
       <li>电视</li>
       <li>家电</li>
       <li>笔记本平板</li>
