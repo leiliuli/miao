@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title><style>
+  body{
+    margin: 0;
+    background-color: rgb(148, 190, 226);
+  }
+  .l1 > li {
+    list-style: none;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  .l1{
+    display: grid;
+    grid-template-columns: 50px 50px 50px;
+    grid-template-rows: 50px 50px 50px 50px 50px 50px 50px;
+  }
+  .l1 li {
+    background-color:red ;
+  }
+  .l2 li { 
+
+  }
+   .l1 > .l {
+    background-color: rgb(65, 147, 218);
+    grid-area: 2 / 1 / span 2/ span 2;
+  }
+   .l1 > .ll{
+    background-color: rgb(34, 83, 125);
+    grid-area: 5 / 2 / span 2 / span 2;
+  }
+  .gundam{
+    list-style: none;
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px 100px ;
+    grid-template-rows: 80px 80px 80px 80px;
+  }
+  .gundam > .no1 {
+    background-color: rgb(202, 175, 78);
+    grid-area: 1 / 1 / span 4 / span 1;
+  }
+  .gundam > .no2 {
+    background-color:rgb(214, 140, 170);
+    grid-area: 1 / 2 / span 2 / span 1;
+  }
+  .gundam > .no3 {
+    background-color: rgb(146, 195, 238);
+    grid-area: 1 / 3 / span 2 / span 1;
+  }
+  .gundam > .no4 {
+   background-color: rgb(147, 158, 168);
+   grid-area: 1 / 4 / span 2 / span 1;
+  }
+  .gundam > .no5{
+    background-color: rgb(176, 165, 195);
+    grid-area: 1 /5 / span 2 / span 1;
+
+  }
+  .free{
+    list-style: none;
+    display: grid;
+    grid-template-columns: 60px 60px;
+    grid-template-rows: 50px 50px 50px 50px 50px 50px;
+  }
+  .free > .gundam1 {
+    background-color: rgb(176, 165, 195);
+    grid-area: 1 / 1;
+  }
+  .free > .gundam2 {
+    background-color: rgb(88, 51, 152);
+    grid-area: 2 / 1;
+  }
+  .free > .gundam3 {
+    background-color: rgb(56, 39, 87);
+    grid-area: 3 / 1;
+  }
+  .free > .gundam4 {
+    background-color: rgb(64, 156, 93);
+    grid-area: 4 / 1;
+  }
+  .free > .gundam5 {
+    background-color: rgb(39, 109, 231);
+    grid-area: 5 / 1;
+  }
+  .free > .gundam6 {
+    background-color: rgb(223, 122, 59);
+    grid-area: 6 / 1;
+  }
+  .free > .gundam7 {
+    background-color: rgb(186, 51, 96);
+    grid-area: 7 / 1;
+  }
+  .gundam8 {
+    background-color: rgb(244, 10, 88);
+    grid-area: 1;
+
+  }
+  </style>
+</head>
+<body>
+  <div class="llx">
+    <ul class="l1">
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+      <li class="l">4</li>
+      <li>5</li>
+      <li>6</li>
+      <li>7</li>
+      <li>8</li>
+      <li>9</li>
+      <li>10</li>
+      <li class="ll">11</li>
+      <li>12</li>
+      <li>13</li>
+      <li>14</li>
+      <li>15</li>
+    </ul>
+  </div>
+  <div>
+    <ul class="gundam">
+      <li class="no1"><img src="data:image/jpeg;base64,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" height="180px" alt=""> 二次元终将获得胜利</li>
+      <li class="no2">世界`礼仪`崩坏`天仪`</li>
+      <li class="no3">中二的二次元 终究为王</li>
+      <li class="no4">吾王剑锋所指吾等心之所向</li>
+      <li class="no5">别看了 没有了 不想找了</li>
+      <li>6</li>
+      <li>7</li>
+      <li>8</li>
+      <li>9</li>
+      <li>10</li>
+      <li>11</li>
+      <li>12</li>
+      <li>13</li>
+    </ul>
+  </div>
+  <div>
+    <ul class="free">
+      <li class="gundam1">1</li>
+      <li class="gundam8">2</li>
+      <li class="gundam2">3</li>
+      <li class="gundam3">5</li>
+      <li class="gundam4">7</li>
+      <li class="gundam5">9</li>
+      <li class="gundam6">11</li>
+      <li class="gundam7">13</li>
+    </ul>
+  </div>
+</body>
+</html>
