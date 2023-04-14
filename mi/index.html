@@ -50,7 +50,6 @@
     top: 80px;
     display: inline-block;
   }
- 
   .top3 > input {
        position: absolute;
        right: 200px;
@@ -114,6 +113,9 @@
   .borderr5{
     border-right: 1px solid black;
   }
+  .free{
+    height: 623px;
+  }
   .free > ul > li{
     list-style: none;
     background-color: rgb(142, 148, 155);
@@ -121,8 +123,9 @@
   .free1:hover > ul {
     display: block;
     position: absolute;
-    padding-left: 160px;
+    padding-left: 200px;
     margin-top: -20.5px;
+    z-index: 2;
   }
   .free2{
     list-style: none;
@@ -135,6 +138,8 @@
     grid-template-columns: 300px 300px;
     grid-template-rows: 70px 70px 70px 70px 70px 70px 70px;
     list-style: none;
+    background-color: rgb(255, 255, 255);
+
   }
   .free301 {
     grid-area: 1 / 1;
@@ -166,10 +171,61 @@
   }
   .free > ul {
     width: 300px;
-    height: 1600px;
     padding-left: 175px;
     position: relative;
   }
+   .gundamq > img {
+      position: absolute;
+      transition: 2s;
+      background-color: rgb(78, 111, 139);
+      width: 840px;
+      height: 500px;
+      margin-top: -643px;
+      margin-left: 375px;
+    }
+    .world{
+      margin-top: -537px;
+      margin-left: 375px;
+    }
+   
+    .gundamq > img{
+      display: none;
+      position: absolute;
+      transition: 2s;
+    }
+    input:checked + * + * + * + * {
+       display: block;
+  }
+  .gundamq{
+    position: absolute;
+    white-space: nowrap;
+    position: relative;
+  }
+ .xxz{
+  margin-left: 1100px;
+  position: absolute;
+  background-color: rgb(115, 45, 255);
+  bottom: 145px;
+  z-index: 16;
+ }
+ .xxx{
+  margin-left: 1120px;
+  position: absolute;
+  background-color: rgb(115, 45, 255);
+  bottom: 145px;
+  z-index: 14;
+ }
+ .xxc{
+  margin-left: 1140px;
+  position: absolute;
+  background-color: rgb(115, 45, 255);
+  bottom: 145px;
+  z-index: 15;
+ }
+ .xxv{
+  margin-left: -550px;
+ }
+
   </style>
 </head>
 <body>
@@ -208,7 +264,7 @@
     </a>
   </div>
   <div class="top3"><!--这里是小米上面的搜索栏以及搜索图标,但是不知道为什么 bing的搜索图标会导致程序无法运行 换了图标-->
-    <input type="text">
+    <input type="text" placeholder="笑nm呢 沃尔特 今天必定卡你牌">
     <img src="https://i1.hdslb.com/bfs/archive/354bf819aeb0a1ef8983b89eab33282e04e98b53.jpg@672w_378h_1c.avif" alt="321321">
   </div>
   <div class="top4"><!--这里是小米图标和搜索按钮中间的一栏 目前想法是 用a标签 链接地址  同时增加悬浮属性 出现下方的图标-->
@@ -262,6 +318,22 @@
       <li>智能 路由器</li>
       <li>电源 配件</li>
     </ul>
+  </div>
+  <div class="gundamq">
+    <input class="xxz" type="radio" name="gundam" id="gd2" checked> 
+    <input class="xxx"type="radio" name="gundam" id="gd3"> 
+    <input class="xxc"type="radio" name="gundam" id="gd4"> 
+    <input class="xxv"type="radio" name="gundam" id="gd5"> 
+    <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/d859460cb0ef6bd5919675840a8bf5f4.jpg?thumb=1&w=1533&h=575&f=webp&q=90" alt="">
+    <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/46d41dd62cff2259e56e678205616e0f.jpg?thumb=1&w=1533&h=575&f=webp&q=90" alt="">
+    <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/ff81b5f29bd1681c0a2c6df883d14d38.jpg?thumb=1&w=1533&h=575&f=webp&q=90" alt="">
+    <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/08a9d7eec7b055bac247b5068f817b1d.jpg?thumb=1&w=1533&h=575&f=webp&q=90" alt="">
+    <div class="world">
+      <label for="gd2">2</label>
+      <label for="gd3">3</label>
+      <label for="gd4">4</label>
+      <label for="gd5">5</label>
+    </div>
   </div>
 </body>
 </html>
