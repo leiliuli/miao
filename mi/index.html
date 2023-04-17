@@ -34,35 +34,40 @@
   display: block;
   width: 60px;
   height: 80px;
-  z-index: 1;
+  z-index: 90;
+  position: fixed;
+  top: 58px;
   }
 
   span {
     display: none;
     position: fixed;
   }
-  .top2 > a > img{
+  .top2 > section {
+    position: relative;
+  }
+  .top2 > section > a > img{
     width: 60px;
     height: 67px;
     position:absolute;
-    left: 180px;
-    top: 80px;
+    left: 175px;
+    top: 45px;
     display: inline-block;
   }
-  .top3 > input {
-       position: absolute;
-       right: 200px;
-       top: 100px;
-       height: 35px;
-       width: 300px;
+  .top3{
+    position: absolute;
+    margin-left: 1150px;
+    margin-top: 50px;
   }
-  
-  .top3 > img{
-      width: 40px;
-      height: 40px;
-      position: absolute;
-      right: 160px;
-      top: 100px;
+  .top3 > section > input {
+   position: absolute;
+   margin-left: -170px;
+   margin-top: 0px;
+   height: 45px;
+  }
+  .top3 > section > img {
+    width: 60px;
+    height: 50px;
   }
 
   .top4 > ul >li >a {
@@ -73,15 +78,11 @@
     display: inline-block;
     margin-left: 250px;
     margin-top: 50px;
-    position: fixed;
     position: relative;
   }
 
   .top401:hover > a > span {
-  display: block;
   height: 280px;
-  width: 100%;
-  right: 0px;
   border: 1px black solid;
   display: flex;
   justify-content: center;
@@ -89,7 +90,11 @@
   overflow: auto;
   background-color: rgb(255, 255, 255);
   z-index: 2;
+  position: absolute;
+  width: 100vw;
+  left: -260px;
   }
+
   .top4 > ul >li {
       width: 80px;
       list-style: none;
@@ -135,16 +140,12 @@
   .free3{
     display:grid;
     grid-template-columns: 300px 300px;
-    grid-template-rows: 70px 70px 70px 70px 70px 70px 70px;
+    grid-template-rows: 90px 90px 90px 90px 90px 90px 80px;
     list-style: none;
     background-color: rgb(255, 255, 255);
-
   }
   .free301 {
     grid-area: 1 / 1;
-    justify-content: center;
-    align-items: center;
-    line: height 50%;
   }
   .free302 {
     grid-area: 2 / 1;
@@ -224,7 +225,27 @@
  .xxv{
   margin-left: -550px;
  }
+ .rightwall{
+  list-style: none;
+  position: fixed;
+  right: 0px;
+  top: 150px;
+  z-index: 90;
+  background-color: white;
+ }
 
+ .rightwall > li {
+  border: 1px solid black;
+  width: 100px;
+  height: 95px;
+ }
+
+ .rightwallimg:hover > span {
+  display: block;
+  z-index: 90;
+  position: fixed;
+  right: 101px;
+  }
   </style>
 </head>
 <body>
@@ -258,13 +279,17 @@
     </ul>
   </div>
   <div class="top2"><!--这里是小米左边的图标 但是因为 没有地址 只能用逆光代替-->
-    <a href="https://www.mi.com/">
-      <img src="https://i0.hdslb.com/bfs/archive/efdb281575eb59a342345a18e9d2316487bccb8f.jpg@672w_378h_1c_!web-home-common-cover.avif" alt="辰光">
+    <section>
+      <a href="https://www.mi.com/">
+        <img src="https://i0.hdslb.com/bfs/archive/efdb281575eb59a342345a18e9d2316487bccb8f.jpg@672w_378h_1c_!web-home-common-cover.avif" alt="辰光">
+    </section>
     </a>
   </div>
   <div class="top3"><!--这里是小米上面的搜索栏以及搜索图标,但是不知道为什么 bing的搜索图标会导致程序无法运行 换了图标-->
-    <input type="text" placeholder="笑nm呢 沃尔特 今天必定卡你牌">
-    <img src="https://i1.hdslb.com/bfs/archive/354bf819aeb0a1ef8983b89eab33282e04e98b53.jpg@672w_378h_1c.avif" alt="321321">
+    <section>
+      <input type="text" placeholder="横渠四句">
+      <img src="https://i1.hdslb.com/bfs/archive/354bf819aeb0a1ef8983b89eab33282e04e98b53.jpg@672w_378h_1c.avif" alt="321321">
+    </section>
   </div>
   <div class="top4"><!--这里是小米图标和搜索按钮中间的一栏 目前想法是 用a标签 链接地址  同时增加悬浮属性 出现下方的图标-->
     <ul>
@@ -333,6 +358,17 @@
       <label for="gd4">4</label>
       <label for="gd5">5</label>
     </div>
+  </div>
+  <div class="rightwall">
+    <li class="rightwallimg">手机APP
+      <span>
+        <img src="https://www.bing.com/th?id=OIP.KvFPWGTFpjMnjgKB9SfRUwHaEo&w=146&h=100&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" alt="">
+      </span>
+    </li>
+    <li>个人中心</li>
+    <li>售后服务</li>
+    <li>人工客服</li>
+    <li>购物车</li>
   </div>
 </body>
 </html>
