@@ -14,22 +14,24 @@
       color: white;
       text-decoration: none;
     }
-    .top1 {
-      background-color: rgb(51, 51, 51);
-      margin: 0 ;
-      overflow: hidden;
-      color: white;
-      text-align: center;
-    }
 
-     .top1 > ul >li {
-      width: 80px;
-      list-style: none;
-      display: block;
-      float: left;
-      display: flex;
+  /*这里应该是小米商城最上面的一栏,在下载app和购物车里面 有菜单栏, 同时每一个都是一个链接*/
+    .top1 {
+    background-color: rgb(51, 51, 51);
+    margin: 0 ;
+    overflow: hidden;
+    color: white;
+    text-align: center;
   }
-    
+
+   .top1 > ul >li {
+    width: 80px;
+    list-style: none;
+    display: block;
+    float: left;
+    display: flex;
+  }
+   
   .tp:hover > a > span {
   display: block;
   width: 60px;
@@ -38,7 +40,9 @@
   position: fixed;
   top: 58px;
   }
+/*<!-- 这里应该是小米商城最上面的一栏,在下载app和购物车里面 有菜单栏, 同时每一个都是一个链接-->*/
 
+/*这里是小米左边的图标 但是因为 没有地址 只能用逆光代替*/
   span {
     display: none;
     position: fixed;
@@ -54,6 +58,9 @@
     top: 45px;
     display: inline-block;
   }
+  /*这里是小米左边的图标 但是因为 没有地址 只能用逆光代替*/
+
+  /*这里是小米上面的搜索栏以及搜索图标,但是不知道为什么 bing的搜索图标会导致程序无法运行 换了图标*/
   .top3{
     position: absolute;
     margin-left: 1150px;
@@ -69,7 +76,9 @@
     width: 60px;
     height: 50px;
   }
+/*这里是小米上面的搜索栏以及搜索图标,但是不知道为什么 bing的搜索图标会导致程序无法运行 换了图标*/
 
+/*这里是小米图标和搜索按钮中间的一栏 目前想法是 用a标签 链接地址  同时增加悬浮属性 出现下方的图标*/
   .top4 > ul >li >a {
     color: black;
   }
@@ -117,6 +126,9 @@
   .borderr5{
     border-right: 1px solid black;
   }
+
+  /*↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑这里是小米图标和搜索按钮中间的一栏 目前想法是 用a标签 链接地址  同时增加悬浮属性 出现下方的图标*/
+  
   .free{
     height: 623px;
   }
@@ -246,6 +258,56 @@
   position: fixed;
   right: 101px;
   }
+
+  /*↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓主列表↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓*/
+  .mast-list{
+    margin: 0px;
+  }
+  .mast-list > ul{
+    height: 122px;
+    width: 200px;
+    position: relative;
+    left: 175px;
+    bottom: 105px;
+    padding-left: 0px;
+    background-color: rgb(95, 87, 80);
+  }
+  .mast-list > ul > li{
+    list-style: none;
+    display: inline-block;
+    width: 63px;
+    height: 50px;
+    text-align: center;
+    vertical-align: middle;
+    border: 0.5px solid;
+    box-sizing: border-box;
+    margin-bottom: 22px;
+    overflow: hidden;
+  }
+    /*↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑主列表↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑*/
+
+    /*↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓这里是保障服务后面的列表视图↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓*/
+    .list-chart{
+     background-color: rgb(179, 32, 32);
+     width: 823px;
+     position: relative;
+     left: 392px;
+     bottom: 242px;
+     height: 122px;
+    }
+    .list-chart > ul {
+      padding-left: 0px;
+    }
+    .list-chart > ul > li{
+      list-style: none;
+      box-sizing: border-box;
+      display: inline-block;
+      width: 250px;
+      margin: 0 auto;
+    }
+    .listno1 > img{
+      width: 90%;
+    }
   </style>
 </head>
 <body>
@@ -369,6 +431,25 @@
     <li>售后服务</li>
     <li>人工客服</li>
     <li>购物车</li>
+  </div>
+  <div class="mast-list"><!--这里是保障服务那边的列表视图-->
+    <ul>
+      <li>保障服务</li>
+      <li>企业团购</li>
+      <li>F码通道</li>
+      <li>米粉卡</li>
+      <li>以旧换新</li>
+      <li>话费充值</li>
+    </ul>
+  </div>
+  <div class="list-chart"><!--这里是保障服务后面的列表视图-->
+    <ul>
+      <li class="listno1">
+        <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/0ef4ea18cb2d6ca963d39c2109460e02.jpg?w=632&h=340" alt="">
+      </li>
+      <li>第二张图的位置</li>
+      <li>第三张图的位置</li>
+    </ul>
   </div>
 </body>
 </html>
