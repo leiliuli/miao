@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title><style>
+    body{
+      margin: 0;
+      padding:0;
+    }
+  /*先设置box大盒子的 宽高和边框 底色*/
+   .box{
+    width: 250px;
+    height: 250px;
+    position: relative;
+    transform-style: preserve-3d;
+    margin: 100px auto;
+    transition:   15s;
+   }
+   /*这里是给整个盒子或者说视角设定角度 方便 去调整盒子*/
+   .box{
+    transform: rotateY(9deg) rotateX(73deg);
+   }
+   .box:hover{
+    transform: rotateX(324deg) rotateY(255deg);
+   }
+   .box > div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+   }
+  .left {
+    background-color: red;
+    transform: translateX(-125px) rotateY(90deg);
+  }
+  .right{
+    background-color: yellow;
+    transform: translateX(125px) rotateY(90deg)   ;
+  }
+  .forward{
+    background-color: rgb(67, 31, 31);
+    transform: translateZ(125px);
+  }
+  .back{
+    background-color: rgb(56, 136, 136);
+    transform: translateZ(-125px);
+  }
+  .top{
+    background-color: rgb(82, 62, 101);
+    transform: translateY(-125px) rotateX(90deg);
+  }
+  .button{
+    background-color: rgb(197, 103, 189);
+    transform: translateY(125px) rotateX(90deg);
+  }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <div class="top">top</div>
+    <div class="button">button</div>
+    <div class="left">left</div>
+    <div class="right">right</div>
+    <div class="forward">forward</div>
+    <div class="back">back</div>
+  </div>
+</body>
+</html>
