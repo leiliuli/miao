@@ -9,6 +9,7 @@
     
     body{
       margin: 0px;
+      padding: 0px;
     }
     a{
       color: white;
@@ -16,30 +17,23 @@
     }
 
   /*这里应该是小米商城最上面的一栏,在下载app和购物车里面 有菜单栏, 同时每一个都是一个链接*/
-    .top1 {
-    background-color: rgb(51, 51, 51);
-    margin: 0 ;
-    overflow: hidden;
-    color: white;
-    text-align: center;
+  .top1 > section > ul{
+    margin: 0px;
+   padding: 0px;
+   width: 1920px;
+   font-size: 0px;
+   line-height: 50px;
+   display:flex;
+   position: relative;
   }
+.top1 > section > ul >li {
+  background-color: black;
+  list-style: none;
+  font-size: 16px;
+  text-align: center;
+  flex-grow: 1;
+}
 
-   .top1 > ul >li {
-    width: 80px;
-    list-style: none;
-    display: block;
-    float: left;
-    display: flex;
-  }
-   
-  .tp:hover > a > span {
-  display: block;
-  width: 60px;
-  height: 80px;
-  z-index: 90;
-  position: fixed;
-  top: 58px;
-  }
 /*<!-- 这里应该是小米商城最上面的一栏,在下载app和购物车里面 有菜单栏, 同时每一个都是一个链接-->*/
 
 /*这里是小米左边的图标 但是因为 没有地址 只能用逆光代替*/
@@ -57,6 +51,14 @@
     left: 175px;
     top: 45px;
     display: inline-block;
+  }
+  .tp:hover > a > span {
+  display: block;
+  width: 60px;
+  height: 80px;
+  z-index: 90;
+  position: fixed;
+  top: 58px;
   }
   /*这里是小米左边的图标 但是因为 没有地址 只能用逆光代替*/
 
@@ -79,7 +81,7 @@
 /*这里是小米上面的搜索栏以及搜索图标,但是不知道为什么 bing的搜索图标会导致程序无法运行 换了图标*/
 
 /*这里是小米图标和搜索按钮中间的一栏 目前想法是 用a标签 链接地址  同时增加悬浮属性 出现下方的图标*/
-  .top4 > ul >li >a {
+  .top4 > section > ul >li >a {
     color: black;
   }
 
@@ -88,9 +90,10 @@
     margin-left: 250px;
     margin-top: 50px;
     position: relative;
+    width: 680px;
   }
 
-  .top401:hover > a > span {
+  .top401:hover > section > a > span {
   height: 280px;
   border: 1px black solid;
   display: flex;
@@ -104,7 +107,7 @@
   left: -260px;
   }
 
-  .top4 > ul >li {
+  .top4 > section > ul >li {
       width: 80px;
       list-style: none;
       display: block;
@@ -147,14 +150,14 @@
     list-style: none;
     display: none;
     width: 666px;
-    height: 574px;
   }
   .free3{
     display:grid;
-    grid-template-columns: 300px 300px;
-    grid-template-rows: 90px 90px 90px 90px 90px 90px 80px;
+    grid-template-columns: 280px 280px;
+    grid-template-rows: 80px 80px 80px 80px 80px 80px 80px;
     list-style: none;
     background-color: rgb(255, 255, 255);
+    height: 500px;
   }
   .free301 {
     grid-area: 1 / 1;
@@ -241,15 +244,15 @@
   list-style: none;
   position: fixed;
   right: 0px;
-  top: 150px;
+  top: 500px;
   z-index: 90;
   background-color: white;
  }
 
  .rightwall > li {
   border: 1px solid black;
-  width: 100px;
-  height: 95px;
+  width: 70px;
+  height: 60px;
  }
 
  .rightwallimg:hover > span {
@@ -312,33 +315,32 @@
 </head>
 <body>
   <div class="top1"><!-- 这里应该是小米商城最上面的一栏,在下载app和购物车里面 有菜单栏, 同时每一个都是一个链接-->
-    <ul>
-      <li><a href="https://www.mi.com/">小米官网</a></li>
-      <li><a href="https://www.mi.com/shop">小米商城</a></li>
-      <li><a href="https://www.miui.com/">MIUI</a> </li>
-      <li><a href="https://iot.mi.com/">loT</a> </li>
-      <li><a href="https://i.mi.com/">云服务</a> </li>
-      <li><a href="https://airstar.com/home">天星数科</a> </li>
-      <li><a href="https://youpin.mi.com/">有品</a> </li>
-      <li><a href="https://xiaoai.mi.com/">小爱开发</a> </li>
-      <li><a href="https://qiye.mi.com/">企业团购</a> </li>
-      <li><a href="https://www.mi.com/aptitude/list/?id=88">资质证照</a> </li>
-      <li><a href="https://www.mi.com/aptitude/list/">协议规则</a> </li>
-      <li class="tp">
-        <a href="https://www.mi.com/appdownload/">下载
-          <span>
-            <img src="https://i1.mifile.cn/f/i/17/appdownload/download.png?1" alt="">
-          </span>
-        </a>
-      </li>
-      <li><a href="javascript:;">Select Location</a> </li>
-    </ul>
-    <ul>
-      <li><a href="javascript:void(0);">登陆</a> </li>
-      <li><a href="javascript:void(0);">注册</a> </li>
-      <li><a href="javascript:void(0);">消息通知</a> </li>
-      <li><a href="https://www.mi.com/shop/buy/cart">购物车</a> </li>
-    </ul>
+    <section>
+      <ul>
+        <li><a href="https://www.mi.com/">小米官网</a></li>
+        <li><a href="https://www.mi.com/shop">小米商城</a></li>
+        <li><a href="https://www.miui.com/">MIUI</a> </li>
+        <li><a href="https://iot.mi.com/">loT</a> </li>
+        <li><a href="https://i.mi.com/">云服务</a> </li>
+        <li><a href="https://airstar.com/home">天星数科</a> </li>
+        <li><a href="https://youpin.mi.com/">有品</a> </li>
+        <li><a href="https://xiaoai.mi.com/">小爱开发</a> </li>
+        <li><a href="https://qiye.mi.com/">企业团购</a> </li>
+        <li><a href="https://www.mi.com/aptitude/list/?id=88">资质证照</a> </li>
+        <li><a href="https://www.mi.com/aptitude/list/">协议规则</a> </li>
+        <li class="tp">
+          <a href="https://www.mi.com/appdownload/">下载
+            <span>
+              <img src="https://i1.mifile.cn/f/i/17/appdownload/download.png?1" alt="">
+            </span>
+          </a>
+        </li>
+        <li><a href="javascript:;">Select Location</a> </li>
+        <li><a href="javascript:void(0);">登陆</a> </li>
+        <li><a href="javascript:void(0);">注册</a> </li>
+        <li><a href="javascript:void(0);">消息通知</a> </li>
+        <li><a href="https://www.mi.com/shop/buy/cart">购物车</a> </li>
+    </section>
   </div>
   <div class="top2"><!--这里是小米左边的图标 但是因为 没有地址 只能用逆光代替-->
     <section>
@@ -354,27 +356,30 @@
     </section>
   </div>
   <div class="top4"><!--这里是小米图标和搜索按钮中间的一栏 目前想法是 用a标签 链接地址  同时增加悬浮属性 出现下方的图标-->
-    <ul>
-      <li class="top401"><a href="javascript: void(0);">xiaomi手机
-        <span>
-          <div class="borderr1"><img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/c758eb7e0dce4307c62c47155519bc80.png?thumb=1&w=200&h=138&f=webp&q=90" alt=""></div>
-          <div class="borderr2"><img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/11e28a0a7c6a2ca07f0dc2044d3858c2.png?thumb=1&w=200&h=138&f=webp&q=90" alt=""></div>
-          <div class="borderr3"><img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/581f3a690e6803add02e4c9fde98cb78.png?thumb=1&w=200&h=138&f=webp&q=90" alt=""></div>
-          <div class="borderr4"><img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/4ef3713521fb9d7f114aa8bb152e220d.png?thumb=1&w=200&h=138&f=webp&q=90" alt=""></div>
-          <div class="borderr5"><img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/fea69fb5990da9dfc909aa8279aaea7e.png?thumb=1&w=200&h=138&f=webp&q=90" alt=""></div>
-          <div><img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/9c06f92c3216c90a566916e719935018.png?thumb=1&w=200&h=138&f=webp&q=90" alt=""></div>
-        </span>
-      </a>
-    </li>
-      <li class="top402"><a href="javascript: void(0);">redmi手机</a>  <span><img src="" alt=""></span></li>
-      <li class="top403"><a href="javascript: void(0);">电视</a>       <span><img src="" alt=""></span></li>
-      <li class="top404"><a href="javascript: void(0);">笔记本</a>     <span><img src="" alt=""></span></li>
-      <li class="top405"><a href="javascript: void(0);">平板</a>       <span><img src="" alt=""></span></li>
-      <li class="top406"><a href="javascript: void(0);">家电</a>       <span><img src="" alt=""></span></li>
-      <li class="top407"><a href="javascript: void(0);">路由器</a>     <span><img src="" alt=""></span></li>
-      <li class="top408"><a href="javascript: void(0);">服务中心</a>   <span><img src="" alt=""></span></li>
-      <li class="top409"><a href="javascript: void(0);">社区</a>       <span><img src="" alt=""></span></li>
-    </ul>
+    <section>
+      <ul>
+        <li class="top401"><a href="javascript: void(0);">xiaomi手机
+          <span>
+            <div class="borderr1"><img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/c758eb7e0dce4307c62c47155519bc80.png?thumb=1&w=200&h=138&f=webp&q=90" alt=""></div>
+            <div class="borderr2"><img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/11e28a0a7c6a2ca07f0dc2044d3858c2.png?thumb=1&w=200&h=138&f=webp&q=90" alt=""></div>
+            <div class="borderr3"><img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/581f3a690e6803add02e4c9fde98cb78.png?thumb=1&w=200&h=138&f=webp&q=90" alt=""></div>
+            <div class="borderr4"><img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/4ef3713521fb9d7f114aa8bb152e220d.png?thumb=1&w=200&h=138&f=webp&q=90" alt=""></div>
+            <div class="borderr5"><img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/fea69fb5990da9dfc909aa8279aaea7e.png?thumb=1&w=200&h=138&f=webp&q=90" alt=""></div>
+            <div><img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/9c06f92c3216c90a566916e719935018.png?thumb=1&w=200&h=138&f=webp&q=90" alt=""></div>
+          </span>
+        </a>
+      </li>
+        <li class="top402"><a href="javascript: void(0);">redmi手机</a>  <span><img src="" alt=""></span></li>
+        <li class="top403"><a href="javascript: void(0);">电视</a>       <span><img src="" alt=""></span></li>
+        <li class="top404"><a href="javascript: void(0);">笔记本</a>     <span><img src="" alt=""></span></li>
+        <li class="top405"><a href="javascript: void(0);">平板</a>       <span><img src="" alt=""></span></li>
+        <li class="top406"><a href="javascript: void(0);">家电</a>       <span><img src="" alt=""></span></li>
+        <li class="top407"><a href="javascript: void(0);">路由器</a>     <span><img src="" alt=""></span></li>
+        <li class="top408"><a href="javascript: void(0);">服务中心</a>   <span><img src="" alt=""></span></li>
+        <li class="top409"><a href="javascript: void(0);">社区</a>       <span><img src="" alt=""></span></li>
+      </ul>
+  
+    </section>
     <!--首先第一件事就是A标签不能随便用,上面图片如果用a标签会直接跳出来,以后出了那些必须用a标签的 不然一律用div标签-->
   </div>
   <div class="free">
