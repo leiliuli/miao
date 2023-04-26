@@ -152,6 +152,211 @@
     var a= (2 ** n)
     console.log(a)
   </script>
+    <script id="ch0104/01" >
+      var a = +prompt('请输入a的值')
+      if (a > 0){
+       console.log('positive');
+      }else if(a < 0){
+       console.log('negative');
+      }else {
+       console.log('zero');
+      }
+   </script>
+   <script id="ch0104/02" >
+      var a = +prompt('请输入a的值')
+      if (a < 10000){
+       console.log(Math.abs(a).toFixed(2));
+      }else if(a > -10000){
+       console.log(Math.abs(a).toFixed(2));
+      }
+   </script>
+   <script id="ch0104/03" >
+     var a = +prompt('请输入a的值')
+     if (a % 2 == 1){
+       console.log('odd')
+     }else if (a % 2 == 0){
+       console.log('even')
+     }
+   </script>
+   <script id="ch0104/04" >
+      var a = prompt('请输入a的值')
+      var b=a.charCodeAt(0)
+      if (b % 2 == 1){
+       console.log('YES')
+       }else {
+       console.log('no')
+     }
+   </script>
+   <script id="ch0104/05" >
+       var x = prompt('请输入x的值')
+       var y = prompt('请输入y的值')
+       if (x > y){
+       console.log('>')
+       }else if (x == y){
+       console.log('=')
+       }else {
+       console.log('<')
+       }
+   </script>
+   <script id="ch0104/06" >
+       var x = +prompt('请输入x的值')
+     if (x >= 10  &&  x <= 99){
+       console.log('1')
+     }else {
+       console.log('0')
+     }
+   </script>
+   <script id="ch0104/07" >
+       var x = +prompt('请输入x的值')
+       var y = +prompt('请输入y的值')
+       if (x >=10 || y >=20 ){
+         console.log('1')
+       }else {
+         console.log('0')
+       }
+   </script>
+   <script id="ch0104/08" >
+       var x = +prompt('请输入x的值')
+       if(x % 3 == 0 || x % 15 ==0){
+         console.log('YES')
+       }else {
+         console.log('NO')
+       }
+   </script>
+   <script id="ch0104/09" >
+       var x = +prompt('请输入x的值')
+       if (x % 3 ==0) {
+         console.log('3')
+       }
+       if (x % 5 ==0) {
+         console.log('5')
+       }
+       if (x % 7 ==0) {
+         console.log('7')
+       }
+       if (x % 3 !==0 & x % 5 !== 0 && x % 7 ==0){
+         console.log('n')
+       }
+   </script>
+   <script id="ch0104/10" >
+       var x = +prompt('请输入x的值')
+       var y = +prompt('请输入y的值')
+       if (x <= 60 || y <=60){
+         console.log('1')
+       }else {
+         console.log('0')
+       }
+   </script>
+   <script id="ch0104/11" >
+       var x = +prompt('请输入x的值')
+       if (x == 1 || x == 3 || x == 5){
+         console.log('NO')
+       }else {
+         console.log('YES')
+       }
+   </script>
+   <script id="ch0104/12" >
+       var x = +prompt('请输入x的值')
+       var q = ((x / 3)+50)  //这个是用x 也就是距离 除以步行的每秒的速度 得出需要多少秒 加上骑车锁车的时间 得出一共需要的时间
+       var b=  (x / 1.2)     // 时间越长 速度越慢
+       if ( q > b){
+         console.log('walk')
+       }else if (q < b ){
+         console.log('bike')
+       }else {
+         console.log('All')
+       }
+   </script>
+   <script id="ch0104/13" >
+       var x = +prompt('请输入x的值')
+       if(x < 5 && x >= 0 ){
+         y=-x+2.5
+         console.log((y).toFixed(3))
+       }else if (x >= 5 && x < 10){
+         y=(2 - 1.5 * (x-3) * (x-3))
+         console.log((y).toFixed(3))
+       }else {
+         y=((x / 2) - 1.5)
+         console.log((y).toFixed(3))
+       }
+   </script>
+   <script id="ch0104/14" >
+       var x = +prompt('请输入x的值')
+       var j = +prompt('请输入j的值')
+       var z= (4 * (Math.ceil((x - 1000) / 500)))+8
+       if (j = 'y'){
+          console.log(z+5)
+       }else{
+         console.log(z)
+       }
+   </script>
+   <script id="ch0104/15" >
+       var x = +prompt('请输入x的值')
+       var num2 = +prompt('请输入y的值')
+       var num3 = +prompt('请输入z的值')
+       var maxNum = x
+       if (num2 > maxNum) {
+            maxNum = num2;
+         }
+         if (num3 > maxNum) {
+            maxNum = num3;
+         }
+         console.log(maxNum);
+   </script>
+   <script id="ch0104/16" >
+       var a = +prompt('请输入a的值')
+       var b = +prompt('请输入b的值')
+       var c = +prompt('请输入c的值')
+       if((a + b) > c || (a + c) > b || (c + b) > a){
+         console.log('YES')
+       }else {
+         console.log('NO')
+       }
+   </script>
+   <script id="ch0104/17" >
+       var a = +prompt('请输入a的值')
+       if (a % 4 == 0 && a % 100 !== 0 || a % 100 == 0 && a % 400 == 0){
+         console.log('YES')
+       }else {
+         console.log('NO')
+       }
+   </script>
+   <script id="ch0104/18" >
+       var x = +prompt('请输入x的值')
+       var y = +prompt('请输入y的值')
+       if (x >= -1 && x <= 1 && y >= -1 && y <= 1){
+         console.log('YES')
+       }else{
+         console.log('NO')
+       }
+   </script>
+   <script id="ch0104/19" >
+       var x = +prompt('请输入x的值')
+       var y = +prompt('请输入y的值')
+       var z = prompt('请输入z的值')
+       if (z == '+'){
+         console.log(x + y)
+       }else if (z == '-'){
+         console.log(x - y)
+       }else if (z == '*'){
+         console.log(x * y)
+       }else if (z == '/'){
+         console.log(x / y)
+       }
+       if (y == '0'){
+         console.log('Divided by zero!')
+       }
+       if (z !== '+' && z !== '-' && z !== '*' && z !== '/'){
+         console.log('Invalid operator!')
+       }
+   </script>
+ <script id="ch0104/20">
+ </script>
+ <script id="ch0104/21" >
+   var n= +prompt(`n`)
+   var a= (2 ** n)
+   console.log(a)
+ </script>
 </head>
 <body>
   
