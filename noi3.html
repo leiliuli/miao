@@ -1,0 +1,135 @@
+<script id="ch0105/01">
+  var n= +prompt('请输入人数')
+  var sum= 0  //年龄综合
+  var counter= 0  //计数器
+  while (counter < n){
+    var age= +prompt('')
+    sum= sum +age
+    counter= counter + 1
+  }
+  var end = sum / n 
+  console.log(end)
+</script>
+<script id="ch0105/02">
+  var counter= 0  //计数器
+  var sum= 0  //综合
+  while (counter < 12){
+    var a= +prompt('输入当月工资')
+    sum= sum +a
+    counter = counter +1
+  }
+  var end ='$' + (sum / 12).toFixed(2)
+  console.log(end)
+</script>
+<script id="ch0105/03">
+  var n= +prompt('请输入')
+  var counter= 0  //计数器
+  var sum= 0  //综合
+  while (counter < n){
+    var a= +prompt('请输入')
+    sum =sum + a
+    counter= counter + 1
+  }
+  var end= (sum / n).toFixed(4)
+  console.log(end)
+</script>
+<script id="ch0105/04">
+  var n= +prompt('请输入')
+  var counter= 0  //计数器
+  var sum= 0  //综合
+  while ( counter < n){
+    var a= +prompt('请输入')
+    sum =sum + a
+    counter=counter + 1
+  }
+  var end=(sum / n).toFixed(5)
+  console.log(sum)
+  console.log(end)
+</script>
+<script id="ch0105/05">
+  var n= +prompt('请输入')
+  var counter= 0  //计数器
+  var maxNum=0
+  while ( counter < n){
+    var a= +prompt('请输入')
+    counter=counter + 1
+    if (maxNum < a){
+      maxNum = a
+    }
+  }
+  console.log(maxNum)
+</script>
+<script id="ch0105/06">
+  var n= +prompt('请输入')
+  var counter= 0  //计数器
+  var maxNum=0
+  var minNum=100
+  while ( counter < n){
+    var a= +prompt('请输入')
+    counter=counter + 1
+    if ( maxNum < a){
+      maxNum = a
+    }
+    if ( minNum > a){
+      minNum = a 
+    }
+  }
+  var end = (maxNum - minNum)
+  console.log(end)
+</script>
+<script id="ch0105/07">
+  var n= +prompt('请输入')
+  var counter= 0  //计数器
+  suma=0
+  sumb=0
+  sumc=0
+  while (counter < n){
+    var a= +prompt('请输入')
+    var b= +prompt('请输入')
+    var c= +prompt('请输入')
+    suma=suma + a
+    sumb=sumb + b
+    sumc=sumc + c
+    counter=counter + 1
+  }
+  var end=suma + sumb +sumc
+  console.log(suma , sumb , sumc ,end)
+</script>
+<script id="ch0105/08">
+  var n= +prompt('请输入')
+  var counter= 0  //计数器
+  var sum = 0
+  while (counter < n-1){
+    var a= +prompt('请输入')
+    sum=sum + a
+    var b=(((n - 2) * 180) - sum)
+   counter=counter+1
+  }
+  console.log(b)
+</script>
+<script id="ch0105/09">
+  debugger
+  var m= +prompt('请输入')
+  var n= +prompt('请输入')
+  var sum = 0
+  if (m % 2 == 0){
+    m = m +  1
+   }
+  while (m <= n ){
+    m = m + 2
+   sum=sum + m - 2
+  }
+  console.log(sum)
+</script>
+<script id="ch0105/10">
+  var m= +prompt('请输入')
+  var n= +prompt('请输入')
+  var sum=0
+  while (n >= m){
+   if (n % 17 == 0){
+    sum=sum +n
+   }
+    n=n-1
+  }
+  console.log(sum)
+</script>
