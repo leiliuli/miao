@@ -1,5 +1,5 @@
 var leiliuli = {
-  dropright: function(ary,values = 1) {
+  dropRight: function(ary,values = 1) {
     if (values > ary.length){
       return []
     }else {
