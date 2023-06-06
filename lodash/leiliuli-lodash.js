@@ -1,4 +1,4 @@
-let leiliuli = {
+var leiliuli = {
   dropright: function(ary,values = 1) {
     if (values > ary.length){
       return []
@@ -14,6 +14,7 @@ let leiliuli = {
       return ary.slice(values)
     }
   },
+
   compact: function(ary) {
     let result = [];
     for(let i = 0; i < ary.length; i++) {
@@ -29,6 +30,7 @@ let leiliuli = {
     }
     return result;
   },
+
   chunk : function  (ary ,size){
     let result =  []
     for(let i  = 0 ;i < ary.length ; i += size){
@@ -36,6 +38,7 @@ let leiliuli = {
     }
     return result 
   },
+
   difference: function(ary, values) {
     for (let i = 0; i < ary.length; i++) {
       if (values.includes(ary[i])) {
