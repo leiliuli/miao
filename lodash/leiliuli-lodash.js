@@ -49,13 +49,13 @@ var leiliuli = {
     return ary;
   },
 
-     fill : function  (value, start=0, end = value.length){
-      for (let i = start; i < end;i++){
-       value [i] = value
-      }
-      return value;
-  },
-  
+  fill : function  (value,fillvalue, start=0, end = this.length){
+    for (let i = start; i < end;i++){
+      value[i] = fillvalue
+    }
+    return this;
+},
+
 }
 
 
