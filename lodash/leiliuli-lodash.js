@@ -53,7 +53,7 @@ var leiliuli = {
     for (let i = start; i < end;i++){
       value[i] = fillvalue
     }
-    return this;
+    return value;
 },
 
 }
